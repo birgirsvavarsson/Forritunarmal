@@ -5,3 +5,5 @@ public class Token {
 //TODO:gera einhvağ
 }
 //nu virkar tetta
+
+//vuhu
