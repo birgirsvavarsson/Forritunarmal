@@ -2,7 +2,7 @@ package forritunarmalVerkefni;
 
 public class Token {
 	//geririr ekki neitt.
-	//sérğu şetta?
+	//sérğu şetta
 //TODO:gera einhvağ 2
 }
 //nu virkar tetta
