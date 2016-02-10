@@ -1,10 +1,30 @@
 package forritunarmalVerkefni;
 
 public class Token {
-	//geririr ekki neitt.
-	//sérðu þetta
-//TODO:gera einhvað 2
-}
-//nu virkar tetta
 
-//vuhu
+		private String lexeme;
+		
+		public enum TokenCode { ID, ASSIGN, SEMICOL, INT, PLUS, MINUS, MULTI, LPAREN, RPAREN, PRINT, END, ERROR}
+		TokenCode myToken;
+		
+		public Token() {
+			
+		}
+		
+		public TokenCode getTokenCode(){
+			return myToken;
+		}
+		
+		public void setTokenCode(TokenCode myToken){
+			this.myToken = myToken;
+		}
+		
+		public String getLexeme() {
+			return lexeme;
+		}
+
+		public void setLexeme(String lexeme) {
+			this.lexeme = lexeme;
+		} 
+
+}
