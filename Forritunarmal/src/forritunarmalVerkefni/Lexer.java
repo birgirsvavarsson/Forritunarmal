@@ -22,7 +22,7 @@ public class Lexer {
 	{
 		token = new Token();
 		myArray = new ArrayList<String>();
-		int c = 0;
+		c = 0;
 	}
 
 	public void readInput() 
@@ -148,7 +148,8 @@ public class Lexer {
 		}
 		else
 		{
-			
+			token.setTokenCode(Token.TokenCode.ERROR);
+			c++;
 		}
 		
 	}
