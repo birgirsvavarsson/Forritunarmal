@@ -2,21 +2,21 @@ package forritunarmalVerkefni;
 
 public class Token {
 
-		private String lexeme;
+		String lexeme;
+		TokenCode tCode;
 		
-		public enum TokenCode { ID, ASSIGN, SEMICOL, INT, ADD, PLUS, MULT, LPAREN, RPAREN, PRINT, END, ERROR}
-		TokenCode myToken;
+		enum TokenCode { ID, ASSIGN, SEMICOL, INT, ADD, PLUS, MULT, LPAREN, RPAREN, PRINT, END, ERROR}
 		
 		public Token() {
 			
 		}
 		
 		public TokenCode getTokenCode(){
-			return myToken;
+			return tCode;
 		}
 		
 		public void setTokenCode(TokenCode myToken){
-			this.myToken = myToken;
+			this.tCode = myToken;
 		}
 		
 		public String getLexeme() {
