@@ -1,6 +1,7 @@
 package forritunarmalVerkefni;
 
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -27,14 +28,17 @@ public class Lexer {
 
 	public void readInput() 
 	{
+		System.out.println("Type NOW");
 		try
 		{
-			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+			//BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+			BufferedReader reader = new BufferedReader(new FileReader("src/program.l"));
 			while((input = reader.readLine()) != null)
 			{
+				
 				@SuppressWarnings("resource")
 				Scanner scanner = new Scanner(input).useDelimiter("");
-				
+				System.out.println(input);
 				String s0 = "";
 				String s1 = "";
 				
@@ -76,10 +80,11 @@ public class Lexer {
 
 	public void nextToken() 
 	{
+		System.out.println("Kominn inni nextToken");
 		// TODO Auto-generated method stub
 		//Tjekka error?
 		//enum TokenCode { ID, ASSIGN, SEMICOL, INT, ADD, SUB, MULT, LPAREN, RPAREN, PRINT, END, ERROR}
-		
+		System.out.println(myArray);
 		if(myArray.get(c).matches(IDPATTERN))
 		{
 			token.setTokenCode(Token.TokenCode.ID);
@@ -151,6 +156,7 @@ public class Lexer {
 			token.setTokenCode(Token.TokenCode.ERROR);
 			c++;
 		}
+		System.out.println("Buinn med nextToken");
 		
 	}
 

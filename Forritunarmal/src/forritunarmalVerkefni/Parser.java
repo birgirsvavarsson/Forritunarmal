@@ -11,13 +11,17 @@ public class Parser {
 	//token = new Token();
 	
 	public Parser(Lexer newLexer) {
-		//myToken = new Token();
-		//myLexer = new Lexer();
+		myToken = new Token();
+		myLexer = new Lexer();
 		myLexer = newLexer;
+	}
+	
+	public void Parse()
+	{
 		myLexer.readInput();
 		myLexer.nextToken();
+		System.out.println("Kominn i Parse");
 		s();
-		
 		print();
 	}
 

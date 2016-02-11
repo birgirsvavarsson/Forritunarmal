@@ -1,5 +1,6 @@
 package forritunarmalVerkefni;
 
+/*
 public class Interpreter {
 	
 	public static void main(String[] args)
@@ -26,3 +27,4 @@ public class Interpreter {
 	}
 
 }
+*/
