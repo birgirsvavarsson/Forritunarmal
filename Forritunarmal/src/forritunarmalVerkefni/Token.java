@@ -4,7 +4,7 @@ public class Token {
 
 		private String lexeme;
 		
-		public enum TokenCode { ID, ASSIGN, SEMICOL, INT, PLUS, MINUS, MULTI, LPAREN, RPAREN, PRINT, END, ERROR}
+		public enum TokenCode { ID, ASSIGN, SEMICOL, INT, ADD, PLUS, MULT, LPAREN, RPAREN, PRINT, END, ERROR}
 		TokenCode myToken;
 		
 		public Token() {
