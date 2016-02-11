@@ -136,9 +136,19 @@ public class Lexer {
 		}
 		else if(myArray.get(c).matches("print"))
 		{
-			token.setTokenCode(Token.TokenCode.MULT);
+			token.setTokenCode(Token.TokenCode.PRINT);
 			token.setLexeme(myArray.get(c));
 			c++;
+		}
+		else if(myArray.get(c).matches("end"))
+		{
+			token.setTokenCode(Token.TokenCode.END);
+			token.setLexeme(myArray.get(c));
+			c++;
+		}
+		else
+		{
+			
 		}
 		
 	}
