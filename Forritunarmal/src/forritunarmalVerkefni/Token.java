@@ -15,8 +15,8 @@ public class Token {
 			return tCode;
 		}
 		
-		public void setTokenCode(TokenCode myToken){
-			this.tCode = myToken;
+		public void setTokenCode(TokenCode tCode){
+			this.tCode = tCode;
 		}
 		
 		public String getLexeme() {
